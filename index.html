@@ -34,7 +34,9 @@ function jump(){
 	var link = "bdapp://map/direction?region=shanghai&origin=30.87823,121.7767&destination=30.88090,121.78326&mode=driving&src=webapp.baidu.openAPIdemo&viaPoints=%7B%22viaPoints%22%3A%5B%7B%22name%22%3A%22%E8%B7%AF%E8%BF%871%22%2C%22lat%22%3A30.8780%2C%22lng%22%3A121.77768%7D%2C%7B%22name%22%3A%22%E8%B7%AF%E8%BF%872%22%2C%22lat%22%3A30.8827%2C%22lng%22%3A121.7791%7D%2C%7B%22name%22%3A%22%E8%B7%AF%E8%BF%873%22%2C%22lat%22%3A30.88296%2C%22lng%22%3A121.78138%7D%5D%7D";
 	window.location.href = link;
 	 setTimeout(() => {
+			
 		  let hidden = window.document.hidden;
+		  alert(hidden);
 		  if (typeof hidden == "undefined" || hidden == false) {
 			alert('百度导航未安装')
 		  }
